@@ -1,0 +1,140 @@
+h2{
+  margin-top: 8rem;
+  margin-left: 15vw;
+  margin-bottom: 2rem;
+  color: #15a868;
+
+  @media (min-width: 1000px) {
+    margin-top: 6rem;
+  }
+}
+
+.headline{
+  display:none;
+
+  @media (min-width: 350px) {
+    display:block;
+    margin-left: 15vw;
+    font-size: 1.2rem;
+  }
+}
+
+.my-cart-empty{
+  margin-left: 15vw;
+  color: rgb(204, 50, 50);
+  font-size: 1.2rem;
+
+  a{
+    color:  #15a868;
+    text-decoration: none;
+
+    &active, &visited {
+      color:#15a868;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.none {
+  display:none;
+}
+
+.container{
+  width:80vw;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 700px) {
+    width:60vw;
+    min-width: 570px;
+  }
+
+  .book-card-container{
+    width: 80vw;
+    min-width: 70vw;
+    border: 1px solid #15a868;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1rem;
+
+    @media (min-width: 700px) {
+      width: 80vw;
+      min-height: 15vh;
+      min-width: 570px;
+    }
+
+    &:hover{
+      cursor: auto;
+      background-color: rgba(77, 235, 193, 0.70);
+    }
+
+    p{
+      padding-top: 1rem;
+    }
+  }
+}
+
+.bold{
+  font-weight: 700;
+}
+
+p{
+  margin: 1rem;
+}
+
+.price{
+  color:#15a868;
+  font-size: 1.2rem;
+}
+
+.checkout-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+  .Checkout-button{
+    margin: 2rem auto;
+    width: 80vw;
+    padding:1rem;
+    background-color: #15a868;
+    font-size: 1.5rem;
+    color:white;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    @media (min-width: 700px) {
+      min-width: 15vw;
+      width: fit-content;
+    }
+
+    &:hover{
+      font-size: 2rem;
+      border: 1px solid yellow;
+      cursor: pointer;
+    }
+  }
+
+  .Checkout-button:disabled{
+    background-color: gray;
+
+    &:hover{
+      font-size: 1.5rem;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.center{
+  display:block;
+  margin: 1rem auto;
+}
+
+.message{
+  display:block;
+  margin: 1rem auto;
+  color:#15a868;
+}

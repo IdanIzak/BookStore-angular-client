@@ -1,0 +1,112 @@
+.book-card{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+  img{
+    width:80vw;
+    height:80vw;
+    padding: 1rem;
+
+    @media (min-width: 350px) {
+      width:15vw;
+      min-width: 5rem;
+      height:15vw;
+      min-height: 5rem;
+    }
+  }
+
+  .book-details-button{
+    display:block;
+    margin: 0.2rem auto;
+    font-size: 1.2rem;
+    color: white;
+    width: 80%;
+    background-color: #3b5bfc;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    &:hover{
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid yellow;
+    }
+
+    @media (min-width: 350px) {
+      max-width: 20vw;
+      min-width: fit-content;
+    }
+  }
+
+  #add-to-cart-button{
+    display:block;
+    width:80%;
+    padding: 0.5rem;
+    margin: 0.2rem auto;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #15a868;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    @media (min-width: 350px) {
+      max-width: 20vw;
+      min-width: fit-content;
+    }
+
+    &:hover{
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid yellow;
+    }
+  }
+}
+
+.admin-panel{
+  display:flex;
+  flex-direction: column;
+
+  p{
+    display:block;
+    margin-top: 1rem;
+  }
+
+  button{
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+
+  .edit-book-button{
+    margin: 1rem 0.3rem;
+    width:100%;
+    padding:0.5rem;
+    background-color: #15a868;
+    justify-content: center;
+    font-size: 1rem;
+    color:white;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    @media (min-width: 350px) {
+      min-width: min-content;
+    }
+
+    &:hover{
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid yellow;
+    }
+  }
+  .orange{
+    background-color: #cf740c;
+  }
+}
+
+.message{
+  display:flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color:#15a868;
+}

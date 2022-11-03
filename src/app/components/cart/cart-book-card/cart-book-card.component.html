@@ -1,0 +1,17 @@
+<div class="book-card">
+  <p><img src={{book.image}} /></p>
+  <p>{{book.title}}</p>
+  <p>$ {{book.inCartCount >= 1 ? (book.price*book.inCartCount | number: '0.0-3') : (book.price | number: '0.0-3')}}</p>
+  <p>Quantity:<span class="bold"> {{book.inCartCount}}</span>
+    <a (click)="addQuantity(book)" class="add-quantity-button">+</a>
+    <a (click)="reduceQuantity(book)" class="add-quantity-button orange">-</a>
+  </p>
+<button class="book-details-button"
+  type="button"
+  (click)="onOpenBookDetails(book)"
+  >Book details</button>
+<button class="remove-from-cart-button"
+  type="button"
+  (click)="removeFromCart(book)"
+  >Remove from cart</button>
+</div>
